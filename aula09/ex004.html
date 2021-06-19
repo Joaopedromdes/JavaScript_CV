@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div id="css">Clique em mim</div>
+    <div name = "new">Nova div</div>
+    <div name = "new">Nova div</div>
+    <div name = "new">Nova div</div>
+    <p class="nome">João</p>
+    <p class="nome">João</p>
+    <p class="nome">João</p>
+
+    <script>
+        var corpo = window.document.body //A variável corpo sendo o body
+        var p1 = window.document.getElementsByTagName('p')[0] //vai buscar o 1º parágrafo, já que o [0] afirma isso.
+        // window.document.write(p1.innerText) //Vai escrever na tela o texto da variável p1, só o texto puro.
+        //O p1.innerHtml vai pegar o texto e suas formatações, tipo o negrito
+        corpo.style.background = 'cyan' //o Background sendo Cyan
+        p1.style.color = 'blue'
+
+        var d = window.document.getElementById('msg') //Vai buscar apenas a div que tem o id 'msg'
+        d.style.background = 'yellow'
+        d.innerHTML = 'Troquei o texto da Div pelo JavaScript'
+
+        var e = window.document.getElementsByName('new')[1]
+        e.innerText = 'Nova Div em JS'
+
+        var f = window.document.getElementsByClassName('nome')[2]
+        f.innerText =  'Pedro'
+        f.style.color = 'white'
+
+        var g = window.document.querySelector('div#css')
+        g.innerText = 'div pelo selector de Jss que puxa pelas caracteristicas de css'
+    </script>
+</body>
+</html>

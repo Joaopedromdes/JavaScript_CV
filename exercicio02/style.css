@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: cadetblue;
+    text-align: center;
+}
+.cabecalho{
+    padding-top: 40px;
+    color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.escolhas{
+    padding: 10px;
+    
+}
+.superior{
+    padding-bottom: 5px;
+}
+#botao{
+    padding: 3px;
+    background-color: rgba(135, 206, 250, 0.473);
+    cursor: pointer;
+}
+.botao{
+    padding: 10px;
+    padding-bottom: 15px;
+
+}
+.principal{
+    background-color: cornsilk;
+    width: 70%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(32, 32, 32, 0.822);
+    font-weight: bolder;
+    
+}

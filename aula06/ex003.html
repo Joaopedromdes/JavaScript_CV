@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracteres especiais</title>
+    <style>
+        body{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras... <br/>`) //O document.write escreve na tela do body
+        document.write(`Seu nome em maiúsculos é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculos é ${nome.toLowerCase()}.`)
+
+        /*Formatar números
+            var n1 = 1575.4
+            n1.tofixed(2).replace('.', ',') -- Vai fixar 2 casa decimais e trocar o . por , 
+
+            Para utilizar o R$:
+            n1.toLocaleString('pt-BR' {style: 'currency', currency: 'BRL'})
+        */
+    </script>
+</body>
+</html>

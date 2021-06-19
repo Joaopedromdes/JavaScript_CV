@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="adicionar()"> <!--Quando a página abrir use a function adicionar do JS-->
+    <div class = "body">
+    <header class="cabecalho">
+    <h1>Hora do dia</h1>
+    </header>
+    <div class="main">
+     <div id="object">Agora são 9 horas</div>
+    <img id="imagem" src="amanhecer.jpg" alt="Imagens do dia">
+    </div>
+    <p class="instagram">@Joaopedromdes</p>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
+<script>
+    var agora = new Date();
+    var hora = agora.getHours()
+    var corpo = window.document.body
+    var imagem = window.document.getElementById('imagem')
+    if(hora <  12){
+        corpo.style.background = 'rgba(206, 182, 77, 0.685)'
+        imagem.src = 'amanhecer.jpg'
+    }else if(hora < 23){
+        corpo.style.background = 'rgba(141, 98, 18, 0.76)'
+        imagem.src = 'entardecer.jpg'
+        
+    }/*else if(hora <= 23){
+        corpo.style.background = 'rgba(14, 13, 13, 0.836)'
+        
+        imagem.src = 'anoitecer.jpg'
+
+    }*/
+    
+    
+</script>

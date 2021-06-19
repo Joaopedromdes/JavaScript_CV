@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Script</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+       /*var nome = window.prompt('what is your name?'); //Mensagem para colocar textos
+       //O que for digitado dentro do prompt será colocado na variável nome
+       window.alert('É um grande prazer te conhecer, ' + nome + '!');*/
+
+       var n1 = Number(window.prompt('Digite um número: ')) //Vai retornar uma String, mesmo se colocar um número. Com o Number.parseFloat ele vai forçar a trazer um número real.  
+       //Number.parseInt() -- Para números inteiros
+       //
+       var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+       var resultado =  n1 + n2 
+       window.alert(`A soma entre ${n1} + ${n2} = ${resultado.toFixed(2).replace('.',',')}`)
+
+       /*Para converter de String para número:
+       String(n)
+       n.toString()*/
+
+       // + para adição
+       // + para concatenação
+
+       /*s.length -- Quantidade de caracteres de uma String
+       s.toUpperCase -- Toda letra para maiúsculas
+       s.toLowerCase -- Toda letra para Minúsculas*/
+    
+
+    </script>
+</body>
+</html>
